@@ -1,0 +1,35 @@
+gitGraph
+    commit id: "Инициализация проекта"
+    commit id: "Настройка клиент-серверной архитектуры"
+    branch feature/database
+    checkout feature/database
+    commit id: "Добавление базы данных"
+    checkout main
+    merge feature/database
+    branch feature/patient-module
+    checkout feature/patient-module
+    commit id: "Модуль управления пациентами"
+    checkout main
+    merge feature/patient-module
+    branch feature/department-module
+    checkout feature/department-module
+    commit id: "Модуль управления отделениями"
+    commit id: "Модуль управления палатами"
+    checkout main
+    merge feature/department-module
+    branch feature/insurance-integration
+    checkout feature/insurance-integration
+    commit id: "Интеграция со страховой системой"
+    checkout main
+    merge feature/insurance-integration
+    branch feature/admin-roles
+    checkout feature/admin-roles
+    commit id: "Управление ролями пользователей"
+    checkout main
+    merge feature/admin-roles
+    branch feature/monitoring
+    checkout feature/monitoring
+    commit id: "Мониторинг и логирование"
+    checkout main
+    merge feature/monitoring
+    commit id: "Релиз информационной системы больницы"
